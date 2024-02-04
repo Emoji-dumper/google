@@ -1,19 +1,22 @@
 #!/bin/bash
+apt update
+apt autoremove -y google-chrome-stable
+apt autoremove -y chromium
 apt install zenity -y
 wget 'https://raw.githubusercontent.com/Emoji-dumper/google/main/chromium.png'
-ln -s chromium.png /usr/share/icons/hicolor/128x128/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/16x16/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/192x192/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/22x22/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/24x24/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/256x256/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/32x32/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/36x36/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/48x48/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/512x512/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/64x64/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/72x72/chromium.png
-ln -s chromium.png /usr/share/icons/hicolor/96x96/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/128x128/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/16x16/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/192x192/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/22x22/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/24x24/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/256x256/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/32x32/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/36x36/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/48x48/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/512x512/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/64x64/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/72x72/chromium.png
+ln -sf chromium.png /usr/share/icons/hicolor/96x96/chromium.png
 cat << EOF > /usr/share/applications/chromium.desktop
 [Desktop Entry]
 Version=1.0
